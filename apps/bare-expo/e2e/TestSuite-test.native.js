@@ -40,6 +40,8 @@ describe('test-suite', () => {
           url: `bareexpo://test-suite/run?tests=${testName}`,
           launchArgs: {
             EXDevMenuIsOnboardingFinished: true,
+            '-DTXEnableVerboseSyncSystem': 'YES',
+            '-DTXEnableVerboseSyncResources': 'YES',
           },
         });
 
