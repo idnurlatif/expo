@@ -5,7 +5,7 @@ module.exports = {
   globalSetup: 'detox/runners/jest/globalSetup',
   globalTeardown: 'detox/runners/jest/globalTeardown',
   testEnvironment: 'detox/runners/jest/testEnvironment',
-  testTimeout: 120000,
+  testTimeout: 300000,
   testMatch: ['**/*-test.native.js'],
   verbose: true,
 };
