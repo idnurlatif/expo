@@ -42,7 +42,7 @@ module.exports = {
   devices: {
     simulator: {
       type: 'ios.simulator',
-      headless: Boolean(process.env.CI),
+      headless: false,
       device: {
         type: 'iPhone 14 Pro',
       },
