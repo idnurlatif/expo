@@ -6,13 +6,13 @@ module.exports = {
   testRunner: {
     args: {
       config: 'e2e/jest.config.js',
-      maxWorkers: process.env.CI ? 2 : undefined,
+      maxWorkers: undefined,
     },
   },
   artifacts: {
     plugins: {
-      log: process.env.CI ? 'failing' : undefined,
-      screenshot: process.env.CI ? 'failing' : undefined,
+      log: process.env.CI ? 'all' : undefined,
+      screenshot: process.env.CI ? 'all' : undefined,
     },
   },
   apps: {
